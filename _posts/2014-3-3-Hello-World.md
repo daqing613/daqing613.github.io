@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: This is the first page for Daniel Wong's blog, and it's the test playground.
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
