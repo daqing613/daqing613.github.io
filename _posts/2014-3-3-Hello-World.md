@@ -1,6 +1,11 @@
 ---
 layout: post
-title: This is the first page for Daniel Wong's blog, and it's the test playground.
+title: "Hello World"
+description: "This is the first page for Daniel Wong's blog, and it's the test playground."
+categories: [random]
+tags: [jekyll]
+alias: [/2014/03/03/]
+utilities: highlight
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
