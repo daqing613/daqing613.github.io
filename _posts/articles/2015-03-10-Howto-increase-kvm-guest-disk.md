@@ -56,3 +56,5 @@ Finally perform an online resize to resize the logical volume, then check the av
 xfs_growfs /dev/centos/root
 df -h 
 {% endhighlight bash %}
+
+Apparently Centos 7 uses XFS as the default file system and as a result resize2fs will fail.
