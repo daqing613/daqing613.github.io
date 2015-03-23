@@ -6,7 +6,8 @@ description: This is Daniel Wong's personal website.
 logo: site-logo.png
 search: true
 # url: http://localhost:4000
-url: http://daqing613.github.io
+# url: http://daqing613.github.io
+url: http://www.dwong.in
 
 # Jekyll configuration
 
