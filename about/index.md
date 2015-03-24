@@ -12,6 +12,7 @@ image:
 Someone's boring me. I think it's me.
 
                     --Dylan Thomas
+
 ## So Simple Theme is all about:
 
 * Responsive templates. Looking good on mobile, tablet, and desktop.
