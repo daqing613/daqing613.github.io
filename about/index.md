@@ -10,6 +10,7 @@ image:
 ---
 
 Someone's boring me. I think it's me.
+
                     --Dylan Thomas
 ## So Simple Theme is all about:
 
