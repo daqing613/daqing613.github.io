@@ -15,7 +15,7 @@ Someone's boring me. I think it's me.
 
 ## Self Bio:
 
-Daniel Wong is a DevOps who are located in Beijing.He live to dive into Linux and Open Source Software. 
+Daniel Wong is a DevOps who is located in Beijing.He lives to dive into Linux and Open Source Software. 
 
 ## Below are some aspect that he is working on:
 
