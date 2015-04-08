@@ -13,16 +13,18 @@ Someone's boring me. I think it's me.
 
                     --Dylan Thomas
 
-## So Simple Theme is all about:
+## Self Bio:
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Support for Disqus Comments
+Daniel Wong is a DevOps who are located in Beijing.He live to dive into Linux and Open Source Software. 
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
+## Below are some aspect that he is working on:
+
+* Linux Distribution: RedHat/CentOS, Ubuntu/Debian.
+* Monitor solution: Nagios, Munin, Zabbix.
+* Automate Management: Puppet, SaltStack.
+* Virtualization: KVM, OpenVZ
+* Virtualization Hypervisor: libvirt, virt-manage, Openstack, Proxmox
+
+
 
 [^1]: Example: *domain.com/category-name/post-title*
