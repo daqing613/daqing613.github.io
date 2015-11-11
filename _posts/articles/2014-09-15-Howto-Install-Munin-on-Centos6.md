@@ -10,7 +10,6 @@ image:
   feature: so-simple-sample-image-4.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
-link: http://www.unixmen.com/install-munin-monitoring-tool-centos-rhel-scientific-linux-6-56-46-3/
 ---
 
 
@@ -70,6 +69,9 @@ Reference:
 
 
 `http://munin-monitoring.org/`
+
+
+
 
 
 
