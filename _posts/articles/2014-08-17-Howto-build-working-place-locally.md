@@ -33,6 +33,9 @@ git remote set-url origin git@github.com:daqing613/daqing613.github.io.git
 
 git push origin master 
 
+git config --global user.email "dwong@dwong.com"
+
+git config --global user.name "Dwong"
 
 {% endhighlight %}
 
