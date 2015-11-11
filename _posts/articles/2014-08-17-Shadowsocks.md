@@ -17,9 +17,10 @@ Shadowsocks is fast socks proxy which can help us visit google or facebook.com.
 
 Here's the address for downloading: 
 
+{% highlight bash %}
 https://github.com/daqing613/shadowsocks/archive/master.zip
 
-
+{% endhighlight %}
 
 The above program is for the server side, meanwhile we still need client site on linux, andriod or iphone. 
 
