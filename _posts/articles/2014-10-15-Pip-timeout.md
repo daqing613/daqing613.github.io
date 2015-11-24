@@ -32,9 +32,13 @@ image:
 
 pipy国内镜像目前有：
  
+
 http://pypi.douban.com/  豆瓣
+
 http://pypi.hustunique.com/  华中理工大学
+
 http://pypi.sdutlinux.org/  山东理工大学
+
 http://pypi.mirrors.ustc.edu.cn/  中国科学技术大学
 
 {% highlight bash %}
