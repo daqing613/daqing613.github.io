@@ -16,11 +16,11 @@ image:
 
 granphviz 
 
-http://www.graphviz.org/
+<a href="http://www.graphviz.org/">graphviz</a>
 
 web granphviz
 
-http://www.webgraphviz.com/ 
+<a href="http://www.webgraphviz.com/">webgraphviz</a>
 
 dia / visio/ omnlgraffle
 
@@ -28,18 +28,23 @@ ProcessOn 在线协作绘图平台
 
 亿图
 
-https://www.edrawsoft.com/cn/ 
+<a href="https://www.edrawsoft.com/cn/">www.edrawsoft.com</a>
 
 黑客风格的画图软件
 
-http://asciiflow.com/
+<a href="http://asciiflow.com/">asciiflow.com</a>
 
 
 * 思维导图： 
 
 xmind/mindmanager 
 
-百度脑图
 
-http://naotu.baidu.com/
 
+<a href="http://naotu.baidu.com/">百度脑图</a>
+
+
+* 矢量图：
+
+
+<a href="https://inkscape.org/en">inkscape</a> 
