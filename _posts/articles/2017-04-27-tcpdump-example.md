@@ -13,104 +13,139 @@ image:
 ---
 
 
-In most cases you will need root permission to be able to capture packets on an interface. Using tcpdump (with root) to capture the packets and saving them to a file to analyze with Wireshark (using a regular account) is recommended over using Wireshark with a root account to capture packets on an "untrusted" interface. See the Wireshark security advisories for reasons why.
+这里我们需要使用root权限在网卡上来抓包。 建议使用tcpdump抓包并保存到一个文件里， 然后使用Wireshark来分析它。 
 
-See the list of interfaces on which tcpdump can listen:
+* 列出可以被tcpdump监听的网卡： 
 
-tcpdump -D
-Listen on interface eth0:
+`tcpdump -D`
 
-tcpdump -i eth0
-Listen on any available interface (cannot be done in promiscuous mode. Requires Linux kernel 2.2 or greater):
+* 监听eth0网卡:
 
-tcpdump -i any
-Be verbose while capturing packets:
+`tcpdump -i eth0`
 
-tcpdump -v
-Be more verbose while capturing packets:
+* 监听所有可用的网卡(不能用于*混杂模式*. 需要linux kernel 2.2及以上)
 
-tcpdump -vv
-Be very verbose while capturing packets:
+`tcpdump -i any`
 
-tcpdump -vvv
-Be verbose and print the data of each packet in both hex and ASCII, excluding the link level header:
+* 抓包处于详细模式
 
-tcpdump -v -X
-Be verbose and print the data of each packet in both hex and ASCII, also including the link level header:
+`tcpdump -v`
 
-tcpdump -v -XX
-Be less verbose (than the default) while capturing packets:
+* 抓包处于详细模式, 程度+1
 
-tcpdump -q
-Limit the capture to 100 packets:
+`tcpdump -vv`
 
-tcpdump -c 100
-Record the packet capture to a file called capture.cap:
+* 抓包处于详细模式, 程度+2
 
-tcpdump -w capture.cap
-Record the packet capture to a file called capture.cap but display on-screen how many packets have been captured in real-time:
+`tcpdump -vvv`
 
-tcpdump -v -w capture.cap
-Display the packets of a file called capture.cap:
+* 详细模式并同时以十进制和ASCII的方式打印每个包的数据， 排除链路层数据头
 
-tcpdump -r capture.cap
-Display the packets using maximum detail of a file called capture.cap:
+`tcpdump -v -X`
 
-tcpdump -vvv -r capture.cap
-Display IP addresses and port numbers instead of domain and service names when capturing packets (note: on some systems you need to specify -nn to display port numbers):
+* 详细模式并同时以十进制和ASCII的方式打印每个包的数据， 包含链路层数据头
 
-tcpdump -n
-Capture any packets where the destination host is 192.168.1.1. Display IP addresses and port numbers:
+`tcpdump -v -XX`
 
-tcpdump -n dst host 192.168.1.1
-Capture any packets where the source host is 192.168.1.1. Display IP addresses and port numbers:
 
-tcpdump -n src host 192.168.1.1
-Capture any packets where the source or destination host is 192.168.1.1. Display IP addresses and port numbers:
+* 抓包处于低于默认详细模式下
 
-tcpdump -n host 192.168.1.1
-Capture any packets where the destination network is 192.168.1.0/24. Display IP addresses and port numbers:
+`tcpdump -q`
 
-tcpdump -n dst net 192.168.1.0/24
-Capture any packets where the source network is 192.168.1.0/24. Display IP addresses and port numbers:
+* 抓100个包： 
 
-tcpdump -n src net 192.168.1.0/24
-Capture any packets where the source or destination network is 192.168.1.0/24. Display IP addresses and port numbers:
+`tcpdump -c 100`
 
-tcpdump -n net 192.168.1.0/24
-Capture any packets where the destination port is 23. Display IP addresses and port numbers:
+* 抓包并写入到capture.cap文件
 
-tcpdump -n dst port 23
-Capture any packets where the destination port is is between 1 and 1023 inclusive. Display IP addresses and port numbers:
+`tcpdump -w capture.cap`
 
-tcpdump -n dst portrange 1-1023
-Capture only TCP packets where the destination port is is between 1 and 1023 inclusive. Display IP addresses and port numbers:
+* 抓包并写入到capture.cap文件同时实时显示包的数量
 
-tcpdump -n tcp dst portrange 1-1023
-Capture only UDP packets where the destination port is is between 1 and 1023 inclusive. Display IP addresses and port numbers:
+`tcpdump -v -w capture.cap`
 
-tcpdump -n udp dst portrange 1-1023
-Capture any packets with destination IP 192.168.1.1 and destination port 23. Display IP addresses and port numbers:
+* 从文件capture.cap中读取数据包
 
-tcpdump -n "dst host 192.168.1.1 and dst port 23"
-Capture any packets with destination IP 192.168.1.1 and destination port 80 or 443. Display IP addresses and port numbers:
+`tcpdump -r capture.cap`
 
-tcpdump -n "dst host 192.168.1.1 and (dst port 80 or dst port 443)"
-Capture any ICMP packets:
+* 从文件capture.cap中读取数据包的最详细信息
 
-tcpdump -v icmp
-Capture any ARP packets:
+`tcpdump -vvv -r capture.cap`
 
-tcpdump -v arp
-Capture either ICMP or ARP packets:
+* 抓包时显示IP地址和端口而不是域名和服务名(在某些系统上我们可能需要指定*--n*来显示端口号)
 
-tcpdump -v "icmp or arp"
-Capture any packets that are broadcast or multicast:
+`tcpdump -n`
 
-tcpdump -n "broadcast or multicast"
-Capture 500 bytes of data for each packet rather than the default of 68 bytes:
+* 抓取所有到目的地址192.168.1.1的包。 显示IP地址和端口号
 
-tcpdump -s 500
-Capture all bytes of data within the packet:
+`tcpdump -n dst host 192.168.1.1`
 
-tcpdump -s 0
+* 抓取所有源地址为192.168.1.1的包。 显示IP地址和端口号
+
+`tcpdump -n src host 192.168.1.1`
+
+* 抓取所有不论目的地址还是源地址是192.168.1.1的包。 显示IP地址和端口号
+
+`tcpdump -n host 192.168.1.1`
+
+* 抓取所有到目的网络192.168.1.0/24的包。 显示IP地址和端口号
+
+`tcpdump -n dst net 192.168.1.0/24`
+
+* 抓取所有源网络192.168.1.0/24的包。 显示IP地址和端口号
+
+`tcpdump -n src net 192.168.1.0/24`
+
+* 抓取所有不论是目的网络还是源网络192.168.1.0/24的包。 显示IP地址和端口号
+
+`tcpdump -n net 192.168.1.0/24`
+
+* 抓取所有目的端口为23的包。 显示IP地址和端口号
+
+`tcpdump -n dst port 23`
+
+* 抓取所有目的端口为1-1023的包。 显示IP地址和端口号
+
+`tcpdump -n dst portrange 1-1023`
+
+* 抓取所有目的端口为1-1023的TCP包。 显示IP地址和端口号
+
+`tcpdump -n tcp dst portrange 1-1023`
+
+* 抓取所有目的端口为1-1023的UDP包。 显示IP地址和端口号
+
+`tcpdump -n udp dst portrange 1-1023`
+
+* 抓取所有目的IP为192.168.1.1和端口为23的包。 显示IP地址和端口号
+
+`tcpdump -n "dst host 192.168.1.1 and dst port 23"`
+
+* 抓取所有目的IP为192.168.1.1和端口为443或80的包。 显示IP地址和端口号
+
+`tcpdump -n "dst host 192.168.1.1 and (dst port 80 or dst port 443)"`
+
+* 抓取所有ICMP包
+
+`tcpdump -v icmp`
+
+* 抓取所有ICMP包
+
+`tcpdump -v arp`
+
+* 抓取所有ICMP和ARP包
+
+`tcpdump -v "icmp or arp"`
+
+* 抓取广播或者多播的包 
+
+`tcpdump -n "broadcast or multicast"`
+
+* 抓取大小为500字节的包，而不是默认的68字节包
+
+`tcpdump -s 500`
+
+* 抓取所有字节大小的包
+
+`tcpdump -s 0`
+
+> http://www.rationallyparanoid.com/articles/tcpdump.html 
