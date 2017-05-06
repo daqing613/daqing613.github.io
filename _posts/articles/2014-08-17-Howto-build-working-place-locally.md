@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Set up A Local Working Place for www.dwong.in"
+title: "How to Set up A Local Working Place for www.bt91.net"
 excerpt: "有些时候我们会需要更换电脑，但是我们仍然需要对自己的blog进行update,这是就需要创建本地环境。" 
 categories: articles
 tags: [git, jekyll, linux, blog]
