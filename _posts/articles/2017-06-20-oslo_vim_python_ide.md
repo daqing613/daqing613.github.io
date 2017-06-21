@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vim Python IDE 开发环境"
-excerpt: "文档描述的是如何使用Vundle搭建Vim Python开发环境，提供工作效率。" 
+excerpt: "文档描述的是如何使用Vundle搭建Vim Python开发环境，提高工作效率。" 
 categories: articles
 tags: ['vim', 'python', 'IDE']
 comments: true
