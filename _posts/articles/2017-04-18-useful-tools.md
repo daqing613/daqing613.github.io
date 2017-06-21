@@ -12,39 +12,68 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-* 流程图： 
+# 命令行工具
+----
 
-granphviz 
+* tmux 
 
-<a href="http://www.graphviz.org/">graphviz</a>
+终端复用软件.
+> https://tmux.github.io
 
-web granphviz
+* htop
 
-<a href="http://www.webgraphviz.com/">webgraphviz</a>
+交互式的进程查看器.
+>http://hisham.hm/htop/
 
-dia / visio/ omnlgraffle
-
-ProcessOn 在线协作绘图平台
-
-亿图
-
-<a href="https://www.edrawsoft.com/cn/">www.edrawsoft.com</a>
-
-黑客风格的画图软件
-
-<a href="http://asciiflow.com/">asciiflow.com</a>
+* atop
+监控系统资源和进程工具, 一定频率的记录系统数据到日志文件. 
 
 
-* 思维导图： 
+# 文档工具
+----
 
-xmind/mindmanager 
+* GitBook Editor
+使用Markdown书写 
+导出多种格式: html, pdf, epub, mobi
 
-
-
-<a href="http://naotu.baidu.com/">百度脑图</a>
-
-
-* 矢量图：
+> https://www.gitbook.com/editor
 
 
-<a href="https://inkscape.org/en">inkscape</a> 
+# 画图工具
+----
+
+## 流程图： 
+
+* granphviz 
+
+> http://www.graphviz.org/
+
+* web granphviz
+
+> http://www.webgraphviz.com/
+
+* dia / visio/ omnlgraffle
+
+* ProcessOn 在线协作绘图平台
+
+* 亿图
+
+> https://www.edrawsoft.com/cn
+
+* 黑客风格的画图软件
+
+> http://asciiflow.com/
+
+
+## 思维导图： 
+
+* xmind/mindmanager 
+
+* 百度脑图
+> http://naotu.baidu.com/
+
+
+## 矢量图：
+
+inkscape
+> https://inkscape.org/en
