@@ -12,8 +12,24 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-由于需要在公司同时对自己的blog进行更新， 我要在公司搭建一个环境， 下面就是如何来克隆github上的内容到本地，及建立ssh认证通道。 
+每次更换公司之后都需要重新搭建一套测试环境， 其中就有关于本地blog的测试环境(jekyll)， 一般会包含两步: 软件环境的安装， blog的同步。 
 
+
+## 软件环境准备
+
+依赖包安装: 
+```bash
+    sudo apt-get install build-essential
+    sudo apt-get install ruby-full
+    sudo gem update --system
+```
+安装Jekyll相关包: 
+```bash
+    # Install Jekyll and Bundler gems through RubyGems
+    gem install jekyll bundler jekyll-sitemap
+```
+
+## 克隆blog
 
 
 * 上传public key 
@@ -23,8 +39,7 @@ image:
 
 * git clone
 
-{%  highlight bash %}
-
+```bash
 git clone git@github.com:daqing613/daqing613.github.io.git 
 
 cd daqing613.github.io/ 
@@ -36,10 +51,12 @@ git push origin master
 git config --global user.email "dwong@dwong.com"
 
 git config --global user.name "Dwong"
+```
 
-{% endhighlight %}
+>引用地址
 
-
-
-
+* https://jekyllrb.com/docs/installation/#requirements 
+* https://www.ruby-lang.org/en/documentation/installation/#apt
+* https://rubygems.org/pages/download
+* https://jekyllrb.com/docs/quickstart/
 
