@@ -35,4 +35,19 @@ google了一翻， 发现有两种解决方案。
 sudo resolvconf -u
 ```
 
+我们需要把NetworkManager配置文件中dns=dnsmasq注释掉。 
+```bash
+sudo vim /etc/NetworkManager/NetworkManager.conf
+```
+
+```
+[main]
+plugins=ifupdown,keyfile,ofono
+#dns=dnsmasq
+```
+
+```bash
+sudo service network-manager restart
+```
+
  * [官网](https://apiblueprint.org/)
