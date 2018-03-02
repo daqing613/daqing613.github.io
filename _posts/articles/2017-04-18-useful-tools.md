@@ -90,3 +90,20 @@ typora将会给你一种无缝体验，无论你是一个读者或者编写人�
 inkscape
 
 <https://inkscape.org/en>
+
+## IDE
+
+### vscode
+
+Visual Studio Code是一款轻量但功能强大的源代码编辑器， 它可以运行在Windows, macOS和Linux上。  它内置了支持JavaScript, TypeScript, Node.js和其他语言(C++, C#, Java, Python, PHP, Go)的丰富生态系统. 
+
+最主要它免费、开源。 
+
+https://code.visualstudio.com/docs/
+
+## 终端回话记录
+
+### asciinema 
+轻量地、基于文本的终端记录
+
+https://asciinema.org/
