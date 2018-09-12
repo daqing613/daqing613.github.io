@@ -55,6 +55,10 @@ typora将会给你一种无缝体验，无论你是一个读者或者编写人�
 
 ## 流程图： 
 
+* draw.io
+draw.io是一个开放式在线和离线免费画图工具， 可以制作流程图、过程图、组织图标、
+<https://about.draw.io/integrations/#integrations_offline>
+
 * granphviz 
 
 <http://www.graphviz.org/>
@@ -99,11 +103,24 @@ Visual Studio Code是一款轻量但功能强大的源代码编辑器， 它可�
 
 最主要它免费、开源。 
 
-https://code.visualstudio.com/docs/
+<https://code.visualstudio.com/docs/>
 
-## 终端回话记录
+## 终端会话记录
 
 ### asciinema 
 轻量地、基于文本的终端记录
 
-https://asciinema.org/
+<https://asciinema.org/>
+
+# 截图工具
+---
+
+Shutter是一款功能丰富的截图工具， 别切可以对图片进行修改、马赛克。。。
+<http://shutter-project.org/downloads/>
+
+# 命令行翻译工具
+translate-shell
+
+基于google, bing等引擎的命令行翻译工具。 
+
+<https://github.com/soimort/translate-shell>
