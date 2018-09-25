@@ -52,7 +52,7 @@ docker.repo
 ```bash
 [docker-ce-stable]
 name=Docker CE Stable - $basearch
-baseurl=http://mirrors.cloud.jieyue.com/repo/docker/centos7/docker-ce-stable/
+baseurl=http://mirrors.abc.com/repo/docker/centos7/docker-ce-stable/
 enabled=1
 gpgcheck=0
 gpgkey=https://download.docker.com/linux/centos/gpg
