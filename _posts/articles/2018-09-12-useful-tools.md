@@ -124,3 +124,9 @@ translate-shell
 基于google, bing等引擎的命令行翻译工具。 
 
 <https://github.com/soimort/translate-shell>
+
+# 桌面共享键盘和鼠标
+
+Synergy链接你的桌面设备到一起, 他可以在不同计算机之间共享的你的键盘和鼠标. 它支持Windows, Linux和Mac OS.
+
+<https://sourceforge.net/projects/synergy-stable-builds/>
