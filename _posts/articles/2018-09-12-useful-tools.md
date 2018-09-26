@@ -13,7 +13,7 @@ image:
 ---
 
 # 命令行工具
-----
+---
 
 * tmux 
 
@@ -32,7 +32,7 @@ image:
 
 
 # 文档工具
-----
+---
 
 * GitBook Editor
 使用Markdown书写 
@@ -51,7 +51,7 @@ typora将会给你一种无缝体验，无论你是一个读者或者编写人�
 
 
 # 画图工具
-----
+---
 
 ## 流程图： 
 
@@ -95,9 +95,9 @@ inkscape
 
 <https://inkscape.org/en>
 
-## IDE
-
-### vscode
+# IDE
+---
+## vscode
 
 Visual Studio Code是一款轻量但功能强大的源代码编辑器， 它可以运行在Windows, macOS和Linux上。  它内置了支持JavaScript, TypeScript, Node.js和其他语言(C++, C#, Java, Python, PHP, Go)的丰富生态系统. 
 
@@ -105,9 +105,10 @@ Visual Studio Code是一款轻量但功能强大的源代码编辑器， 它可�
 
 <https://code.visualstudio.com/docs/>
 
-## 终端会话记录
+# 终端会话记录
+---
 
-### asciinema 
+## asciinema 
 轻量地、基于文本的终端记录
 
 <https://asciinema.org/>
@@ -126,6 +127,7 @@ translate-shell
 <https://github.com/soimort/translate-shell>
 
 # 桌面共享键盘和鼠标
+---
 
 Synergy链接你的桌面设备到一起, 他可以在不同计算机之间共享的你的键盘和鼠标. 它支持Windows, Linux和Mac OS.
 
