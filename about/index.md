@@ -8,23 +8,21 @@ image:
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
-
+```
 Someone's boring me. I think it's me.
 
                     --Dylan Thomas
+```
 
 ## Self Bio:
 
-Daniel Wong is a DevOps who is located in Beijing.He lives to dive into Linux and Open Source Software. 
+Daniel Wong is a DevOps who locates in Beijing.He is addicted to Linux and Open Source Software. 
 
 ## Below are some aspect that he is working on:
 
 * Linux Distribution: RedHat/CentOS, Ubuntu/Debian.
-* Monitor solution: Nagios, Munin, Zabbix.
-* Automate Management: Puppet, SaltStack.
-* Virtualization: KVM, OpenVZ
-* Virtualization Hypervisor: libvirt, virt-manage, Openstack, Proxmox
+* Monitor solution: Nagios, Munin, Zabbix. 
+* Automate Management: Puppet, SaltStack, Ansible. 
+* Virtualization: Openstack, Docker, Kubernetes.
+* Program: Python & Go & Shell.
 
-
-
-[^1]: Example: *domain.com/category-name/post-title*
